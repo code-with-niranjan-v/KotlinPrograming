@@ -28,4 +28,22 @@ fun main(){
     var char1 = code.toChar()
     println("\nTypes Conversion\n$Longnum\n$string1\n$char1")
 
+    //Input Statements
+    var num1 = readLine()?.toInt()
+    var num2 = readLine()?.toInt()
+
+    /*In kotlin, We use readLine() function get input from the user.
+
+     */
+
+    if (num1 != null) {
+        println("Sum:${num1 + num2!!}")
+    }//This block of code will be explained later
+    //It just prints the sum of two inputs only if they are not null.
+
+    //Output Statements
+    /*
+    For output, we use println(),print() in Kotlin.
+     */
+
 }
