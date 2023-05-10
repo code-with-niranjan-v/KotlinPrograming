@@ -46,4 +46,11 @@ fun main(){
     For output, we use println(),print() in Kotlin.
      */
 
+    //Variables Initialization using expression
+    var a = 100
+    var b = 200
+    var c = 400
+    var max = if(a>b && a>c) a else if(b>a && b>c) b else c
+    println("Max:$max")
+
 }
