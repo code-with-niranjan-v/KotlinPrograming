@@ -29,7 +29,7 @@ fun main() {
     sum2(45,89)// -> Lambda Function
     sum3(23,67)// -> Anonymous Function
 
-    """
+    /*
         Difference between Anonymous function and Lambda function
     Syntax: Anonymous functions are defined using the fun keyword, while lambda functions are defined using the { } syntax.
 
@@ -37,6 +37,6 @@ fun main() {
 
     Function name: Anonymous functions have a name, which can be used for recursion or for referencing the function itself. Lambda functions do not have a name, and can only be used as expressions.
 
-    Inline functions: Lambda functions can be marked as inline, which means that their code is inserted directly into the calling function, reducing the overhead of function calls. Anonymous functions cannot be marked as inline."""
+    Inline functions: Lambda functions can be marked as inline, which means that their code is inserted directly into the calling function, reducing the overhead of function calls. Anonymous functions cannot be marked as inline.*/
 }
 
