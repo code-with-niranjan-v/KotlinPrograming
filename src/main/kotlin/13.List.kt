@@ -4,9 +4,17 @@ fun main(){
 	var numbers = listOf(1,23,4,5)
 	
 	//Iterating
+	//Method 1
 	numbers.forEach{
 		println(it)
 }
+	//Method 2
+	for(i in numbers){
+		println(i)
+	}
+
+	//Indexing
+	println(numbers[3])
 
 
 	//Contains and ContainsAll
