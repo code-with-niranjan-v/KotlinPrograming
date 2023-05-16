@@ -1,7 +1,7 @@
 //Set
 /*
 
-    * Set is an unordered collection of elements, and it does not
+    * Set is a collection of elements, and it does not
     contain any duplicate elements.
 
     * It supports both mutable and immutable types.
