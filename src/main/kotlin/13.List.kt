@@ -1,6 +1,8 @@
 //List
 
 //List is an ordered collection of objects
+//Elements are not stored continuously in memory.
+//So, accessing of elements are slow when compared to array.
 
 //listOf() is used to create a list in Kotlin
 
@@ -42,4 +44,15 @@ fun main() {
 
     //Creating a mutable list
 
+    var numbers1 = mutableListOf(1,2,3,4,5,6)
+
+    //Adding a element
+    numbers1.add(2)
+    numbers1.addAll(listOf(7,8,9,10))
+
+    //Removing an element
+    numbers1.remove(10)
+    numbers1.removeAt(8)
+
+    println(numbers1)
 }
