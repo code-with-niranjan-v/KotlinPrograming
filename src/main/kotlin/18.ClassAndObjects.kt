@@ -28,6 +28,13 @@ class Animal{
 
     }
 
+    fun AnimalName(){
+        var name = "Cat" //Local Variable
+        print(this.name)// Global Variable
+        //this keyword refers to instance of the class.
+
+    }
+
 }
 
 
@@ -36,7 +43,8 @@ fun main() {
     //Creating an object
     val dog = Animal()
     dog.name = "Dog"
-    dog.speak("Bark! Bark!")
+    dog.speak("Bark! Bark!\n")
+    dog.AnimalName()
     /*
 
     Here
