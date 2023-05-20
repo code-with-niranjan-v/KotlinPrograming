@@ -20,7 +20,8 @@
 class Check{
 
     var age = 20
-
+    var num1 = 0
+    var num2 = 0
     var result = "None"
         get() {
 
@@ -39,6 +40,9 @@ class Check{
             }
 
         }
+
+    var sum = 0
+        get() = num1+num2
 
 }
 
@@ -66,4 +70,10 @@ fun main(){
     check.age = 17
     println(check.result)
 
+    //Addition of Two numbers
+    check.num1 = 10
+    check.num2 = 20
+    println(check.sum)
+
 }
+
