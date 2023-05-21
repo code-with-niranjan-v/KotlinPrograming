@@ -5,8 +5,8 @@
     when an object is created.
 
     there are two types of object in kotlin
-        * Primary constructor
-        * Secondary constructor
+        * Primary constructor -> included within the header of class
+        * Secondary constructor -> defined using constructor keyword
 
  */
 
