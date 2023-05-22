@@ -31,7 +31,7 @@ class Cars(var model:String,var brand:String,var year:Int){
 fun main() {
 
     val tata = Cars("Tata Neon","Tata",2023)
-    val apple = Fruit("Apple",25,50)
+    val apple = Fruit("Apple",25,50,"Good")
 
 
 }
@@ -41,6 +41,7 @@ class Fruit{
     var name:String
     var price:Int
     var amount:Int
+    var quality:String = ""
 
     //Secondary Constructor
     constructor(name:String, price:Int, amount:Int){
@@ -50,6 +51,15 @@ class Fruit{
         this.amount = amount
 
         display()
+
+    }
+
+    //Calling one secondary constructor from another
+
+    constructor(name:String,price:Int,amount:Int,quality:String):this(name,price,amount){
+
+        this.quality = quality
+        println("\nQuality:$quality")
 
     }
 
