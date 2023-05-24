@@ -2,10 +2,11 @@
 
 /*
 
-    Inheritance means creating a new class using an existing
-    class. The existing class is known as base or parent class and
+    * Inheritance means creating a new class using an existing
+    class.
+    * The existing class is known as base or parent class and
     new class is known as child or subclass.
-    this subclass inherits all the properties of parent class.
+    * This subclass inherits all the properties of parent class.
     We can override the function and properties of parent class from subclass.
 
  */
