@@ -7,7 +7,7 @@
     There are types in kotlin
     1.private -> visible inside the same class only
     2.internal -> visible inside the same module
-    3.protected -> visible inside same class and subclasses
+    3.protected -> visible inside the same class and subclasses
     4.public -> visible from everywhere
  */
 
