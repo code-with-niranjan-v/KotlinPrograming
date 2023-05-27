@@ -1,7 +1,15 @@
-import java.math.BigDecimal
 
 //Generics
 
+/*
+
+    Generics are the powerful features that allow us to define classes,
+    methods, and properties which are accessible using different
+    data types while keeping a check on the compile-time type safety.
+
+ */
+
+//Creating a class with generic type T
 class Details<T>(var element1:T,var element2:T){
 
     init {
@@ -33,7 +41,7 @@ class Search<T>(var elements:ArrayList<T>,var target:T){
             }
 
 
-        } 
+        }
 
 
     }
@@ -42,11 +50,15 @@ class Search<T>(var elements:ArrayList<T>,var target:T){
 
 
 fun main() {
-
+    //Creating objects with int and strings constructors arguments
     val j1 = Details(12,13)
     val j2 = Details("Hello ","World!")
+
     val s1 = Search(arrayListOf(1,5,4,8,9,2,3,4),3)
     val s2 = Search(arrayListOf("A","B","C","Z","D","S"),"Z")
     s1.getElementIndex()
     s2.getElementIndex()
+
+    //So, using generics, we can write code for single generics
+    //type and use it for all data types.
 }
