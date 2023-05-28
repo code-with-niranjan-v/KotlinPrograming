@@ -23,6 +23,7 @@ fun main(){
     var result = 0
     println("Sum:$sum\nAns:$ans\nResult:$result")
     println(result.addAll(13,45))
+    println(808.isPalindrome())
 
 }
 
@@ -39,5 +40,21 @@ fun Calculator.sub(): Int {
 fun Int.addAll(num1:Int,num2:Int): Int {
 
     return this+num1+num2
+
+}
+
+//Here we have added isPalindrome() to Int() class without inheriting it.
+fun Int.isPalindrome():Boolean{
+
+    var temp = this
+    var digit = 0
+    var reverse = 0
+
+    while (temp>0){
+        digit = temp%10
+        reverse = reverse*10 + digit
+        temp = temp.floorDiv(10)
+    }
+    return this==reverse
 
 }
