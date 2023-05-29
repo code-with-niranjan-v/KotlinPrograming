@@ -35,7 +35,18 @@ fun main(){
     }
 
     //Cast Operator
-    var num2 = "20"
-    var str = num2 as Int
+    /*
+         Types of Cast Operator
+         1.as -> unsafe cast
+         2.as? -> safe cast
+
+
+     */
+    var str:Any = 20
+    var num2 = str as Int
     println(str)
+
+    var str1 :Any? = null
+    var num3 =  str1 as? Int
+    println(num3)
 }
