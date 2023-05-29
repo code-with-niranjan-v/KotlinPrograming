@@ -1,4 +1,4 @@
-
+import kotlin.reflect.typeOf
 
 fun main(){
 
@@ -20,4 +20,22 @@ fun main(){
      */
 
     println(name?.length ?: 0)
+
+    //Type Checking
+
+    var num = 10
+    if(num is Int){
+
+        println("$num is Integer")
+
+    }else{
+
+        println("$num is not a Integer")
+
+    }
+
+    //Cast Operator
+    var num2 = "20"
+    var str = num2 as Int
+    println(str)
 }
