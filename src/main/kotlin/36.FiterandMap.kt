@@ -35,6 +35,26 @@ fun main() {
     var oddElementSquare = nums.filter{it%2 != 0}.map{it * it}
     println(oddElementSquare)
 
+    var elements2 = listOf(1,5,3,90,56,34,87,23)
+
+    var checkDividableBy3 = elements2.all{it%3==0}
+    //Checks if all the elements are divisible by 3
+    println(checkDividableBy3)
+
+    var checkAnyDividableBy3 = elements2.any { it%3==0 }
+    //Checks if any of the elements are divisible by 3
+    println(checkAnyDividableBy3)
+
+    var count = elements2.count { it%3==0 }
+    //Returns the numbers of elements that satisfy the predicate
+    println(count)
+
+    var firstElement = elements2.find{it%3==0}
+    //Return the first element that satisfies the predicate.
+    println(firstElement)
+
+
+
 
 
 
